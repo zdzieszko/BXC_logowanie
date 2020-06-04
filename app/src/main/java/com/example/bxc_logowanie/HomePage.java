@@ -79,7 +79,7 @@ public class HomePage extends AppCompatActivity {
         NavigationView navigationView = findViewById(R.id.navigationView2);
         navigationView.setItemIconTintList(null);
 
-        NavController navController = Navigation.findNavController(this,R.id.navHostFragment2);
+        NavController navController = Navigation.findNavController(this,R.id.navHostFragment);
         NavigationUI.setupWithNavController(navigationView, navController);
         }
 
