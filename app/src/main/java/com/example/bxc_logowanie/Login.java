@@ -1,6 +1,7 @@
 package com.example.bxc_logowanie;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,12 +16,6 @@ public class Login extends AppCompatActivity {
     EditText Name;
     EditText Password;
     Button Login;
-
-//    private boolean onLogin;
-//
-//    public boolean isOnLogin() {
-//        return onLogin;
-//    }
 
     TextView Info;
     TextView NewUser;
@@ -51,11 +46,10 @@ public class Login extends AppCompatActivity {
                 String password = Password.getText().toString();
                 Boolean LoginPassword = db.loginpassword(login, password);
                 if (LoginPassword == true){
+
                     Intent intent = new Intent(Login.this, HomePageLog.class);
-
-                    //onLogin = true;
-
                     startActivity(intent);
+
                 }else {
                     Toast.makeText(getApplicationContext(),"Wrong login or password", Toast.LENGTH_SHORT).show();
                     counter--;

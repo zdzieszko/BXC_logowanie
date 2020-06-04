@@ -3,10 +3,12 @@ package com.example.bxc_logowanie;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
+import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -17,20 +19,13 @@ import android.widget.ViewFlipper;
 
 import com.google.android.material.navigation.NavigationView;
 
+import static com.example.bxc_logowanie.R.id.menuZaloguj;
+
 public class HomePage extends AppCompatActivity {
 
     Button Login;
     Button Register;
     ViewFlipper v_flipper;
-
-
-//    private boolean onLogin2;
-//
-//    public void setOnLogin2(boolean onLogin) {
-//        this.onLogin2 = onLogin;
-//    }
-
-
 
 
 
