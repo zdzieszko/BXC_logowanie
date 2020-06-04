@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/menuMojeGry">
+
+    <fragment
+        android:id="@+id/menuMojeGry"
+        android:name="com.example.bxc_logowanie.MojeGryFragment"
+        android:label="Moje Gry"
+        tools:layout="@layout/fragment_moje_gry"
+        />
+    <fragment
+        android:id="@+id/menuPromocje"
+        android:name="com.example.bxc_logowanie.PromocjeFragment"
+        android:label="Promocje"
+        tools:layout="@layout/fragment_promocje" />
+</navigation>

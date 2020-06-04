@@ -16,6 +16,12 @@ public class Login extends AppCompatActivity {
     EditText Password;
     Button Login;
 
+//    private boolean onLogin;
+//
+//    public boolean isOnLogin() {
+//        return onLogin;
+//    }
+
     TextView Info;
     TextView NewUser;
     int counter = 5;
@@ -33,6 +39,7 @@ public class Login extends AppCompatActivity {
         Login = (Button) findViewById(R.id.btnLogin);
         NewUser = (TextView) findViewById(R.id.textView3);
 
+
         db = new DatabaseHelper(this);
 
         Info.setText("No of attempts remaining: 5");
@@ -44,7 +51,10 @@ public class Login extends AppCompatActivity {
                 String password = Password.getText().toString();
                 Boolean LoginPassword = db.loginpassword(login, password);
                 if (LoginPassword == true){
-                    Intent intent = new Intent(Login.this, SecondActivity.class);
+                    Intent intent = new Intent(Login.this, HomePageLog.class);
+
+                    //onLogin = true;
+
                     startActivity(intent);
                 }else {
                     Toast.makeText(getApplicationContext(),"Wrong login or password", Toast.LENGTH_SHORT).show();

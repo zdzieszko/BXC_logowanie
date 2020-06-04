@@ -5,4 +5,11 @@
     <string name="log_out">LOG OUT</string>
     <string name="wybierz_profil">Wybierz profil:</string>
     <string name="dodaj_nowy_profil">Dodaj Nowy Profil</string>
+    <string name="veryfied">Veryfied</string>
+    <string name="lukaszek">Lukaszek</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="moje_gry">Moje gry</string>
+    <string name="promocje">Promocje</string>
 </resources>

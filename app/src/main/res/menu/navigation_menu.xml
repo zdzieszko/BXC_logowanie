@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuMojeGry"
+        android:title="mojeGry"/>
+    <item
+        android:id="@+id/menuPromocje"
+        android:title="promocje"/>
+    <item
+        android:id="@+id/menuBibliotekaGier"
+        android:title="bibliotekaGier"/>
+    <item
+        android:id="@+id/menuUstawienia"
+        android:title="ustawienia"/>
+    <item
+        android:id="@+id/menuPomoc"
+        android:title="pomoc"/>
+    <item
+        android:id="@+id/menuONas"
+        android:title="oNas"/>
+
+    <item>
+        <menu>
+            <item
+                android:id="@+id/menuWyloguj"
+                android:title="wyloguj"/>
+        </menu>
+    </item>
+
+
+</menu>

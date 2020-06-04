@@ -46,6 +46,8 @@ public class SecondActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(SecondActivity.this, HomePage.class);
+
+
                 startActivity(intent);
             }
         });

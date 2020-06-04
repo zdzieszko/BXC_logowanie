@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
     tools:context="com.example.bxc_logowanie.HomePage">
 
     <ViewFlipper
@@ -16,6 +15,8 @@
 
 
     </ViewFlipper>
+
+
 
     <ImageView
         android:id="@+id/imageView3"
@@ -71,7 +72,6 @@
         android:background="#fff"
         android:textColor="#000"
         android:text="Logowanie" />
-
 
 </FrameLayout>
 

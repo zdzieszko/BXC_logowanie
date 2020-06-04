@@ -7,14 +7,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ViewFlipper;
 
 public class HomePage extends AppCompatActivity {
 
     Button Login;
     Button Register;
-
     ViewFlipper v_flipper;
+
+
+//    private boolean onLogin2;
+//
+//    public void setOnLogin2(boolean onLogin) {
+//        this.onLogin2 = onLogin;
+//    }
+
+
+
 
 
     @Override
@@ -34,22 +44,32 @@ public class HomePage extends AppCompatActivity {
             flipperImages(images[i]);
         }
 
-        Login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomePage.this, Login.class);
-                startActivity(intent);
-            }
-        });
 
-        Register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomePage.this, AddNewUser.class);
-                startActivity(intent);
-            }
-        });
-    }
+//        Login login = new Login();
+//        boolean checkLogin = login.isOnLogin();
+//
+//        HomePage homePage = new HomePage();
+//        homePage.setOnLogin2(checkLogin);
+
+
+      // if (!onLogin2) {
+            Login.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(HomePage.this, Login.class);
+                    startActivity(intent);
+                }
+            });
+
+            Register.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(HomePage.this, AddNewUser.class);
+                    startActivity(intent);
+                }
+            });
+        }
+
 
 
     public void flipperImages(int image){
