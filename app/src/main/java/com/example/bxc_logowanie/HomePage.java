@@ -1,6 +1,11 @@
 package com.example.bxc_logowanie;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +14,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ViewFlipper;
+
+import com.google.android.material.navigation.NavigationView;
 
 public class HomePage extends AppCompatActivity {
 
@@ -44,15 +51,6 @@ public class HomePage extends AppCompatActivity {
             flipperImages(images[i]);
         }
 
-
-//        Login login = new Login();
-//        boolean checkLogin = login.isOnLogin();
-//
-//        HomePage homePage = new HomePage();
-//        homePage.setOnLogin2(checkLogin);
-
-
-      // if (!onLogin2) {
             Login.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -68,6 +66,21 @@ public class HomePage extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
+
+
+        final DrawerLayout drawerLayout = findViewById(R.id.drawerLayout2);
+        findViewById(R.id.imageMenu2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawerLayout.openDrawer(GravityCompat.START);
+            }
+        });
+
+        NavigationView navigationView = findViewById(R.id.navigationView2);
+        navigationView.setItemIconTintList(null);
+
+        NavController navController = Navigation.findNavController(this,R.id.navHostFragment2);
+        NavigationUI.setupWithNavController(navigationView, navController);
         }
 
 
