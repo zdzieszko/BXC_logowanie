@@ -1,5 +1,6 @@
 package com.example.bxc_logowanie;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -25,5 +26,6 @@ public class MojeGryFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_moje_gry, container, false);
+
     }
 }

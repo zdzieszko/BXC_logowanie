@@ -26,4 +26,9 @@
         android:name="com.example.bxc_logowanie.WylogujFragment"
         android:label="fragment_wyloguj"
         tools:layout="@layout/fragment_wyloguj" />
+    <fragment
+        android:id="@+id/menuBibliotekaGier"
+        android:name="com.example.bxc_logowanie.BibliotekaGierFragment"
+        android:label="fragment_biblioteka_gier"
+        tools:layout="@layout/fragment_biblioteka_gier" />
 </navigation>
